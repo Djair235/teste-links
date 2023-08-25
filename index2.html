@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-Teste</title>
+    <style>
+        #div-pai {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            
+            
+        }
+
+        #div-dc {
+            border: 5px solid black;
+            border-radius: 110px;
+            margin-top: 100px;
+        }
+        
+        #div-yt {
+            border: 5px solid black;
+            border-radius: 110px;
+            margin-bottom: 100px;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="div-pai">
+            <img id="div-dc" src="discord img2.png" alt="discord_img" height="600px" width="600px" onclick="clicarDC()">
+            <img id="div-yt" src="youtube img2.jpg" alt="youtube_img" height="600px" width="600px" onclick="clicarYT()">
+    </div>
+
+    <script>
+        function clicarDC() {
+            var dc_logo = document.getElementById("div-dc")
+            var yt_logo = document.getElementById("div-yt")
+            window.open("https://discord.com/");
+        }
+
+        function clicarYT() {
+            var dc_logo = document.getElementById("div-dc")
+            var yt_logo = document.getElementById("div-yt")
+            window.open("https://www.youtube.com/");
+        }
+    </script>
+</body>
+</html>
